@@ -55,5 +55,5 @@ function habilitarFecharPedido(){
     }
 }
 function fecharPedido() {
-
+    
 }

@@ -19,14 +19,14 @@
         <h2>Sua comida em 6 minutos</h2>
     </header>
     <main>
-        <section>
+        <section data-identifier="dishes">
             <h3>Primeiro, seu prato</h3>
             <div class="opçoes pratos">
                 <div class="opçao opçao-prato prato1" onclick="selecionarPrato(this, 'prato1')" data-identifier="food-option">
                     <img src="pizza_calabresa.jpg" alt="prato 1">
                     <p class="nome">Pizza calabresa</p>
                     <p class="descriçao">Pizza grande 8 fatias</p>
-                    <p class="preço">R$ 42,99</p>
+                    <p class="preço" data-identifier="food-price">R$ 42,99</p>
                     <div class="vector">
                         <img class= "vector" src="Vector.png" alt="vector de selecionado">
                     </div>
@@ -35,7 +35,7 @@
                     <img src="pizza_portuguesa-.jpg" alt="prato 2">
                     <p class="nome">Pizza portuguêsa</p>
                     <p class="descriçao">Pizza grande 8 fatias</p>
-                    <p class="preço">R$ 45,99</p>
+                    <p class="preço" data-identifier="food-price">R$ 45,99</p>
                     <div class="vector">
                         <img src="Vector.png" alt="vector de selecionado">
                     </div>
@@ -44,7 +44,7 @@
                     <img src="pizza-marguerita.jpg" alt="prato 3">
                     <p class="nome">Pizza marguerita</p>
                     <p class="descriçao">Pizza grande 8 fatias</p>
-                    <p class="preço">R$ 39,99</p>
+                    <p class="preço" data-identifier="food-price">R$ 39,99</p>
                     <div class="vector">
                         <img src="Vector.png" alt="vector de selecionado">
                     </div>
@@ -53,21 +53,21 @@
                     <img src="pizza_frangocatupiry.jpg" alt="prato 4">
                     <p class="nome">Pizza frango com catupiry</p>
                     <p class="descriçao">Pizza grande 8 fatias</p>
-                    <p class="preço">R$ 43,99</p>
+                    <p class="preço" data-identifier="food-price">R$ 43,99</p>
                     <div class="vector">
                         <img src="Vector.png" alt="vector de selecionado">
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section data-identifier="drinks">
             <h3>Agora, sua bebida</h3>
             <div class="opçoes bebidas">
                 <div class="opçao opçao-bebida bebida1" onclick="selecionarBebida(this , 'bebida1')" data-identifier="food-option">
                     <img src="coca2l.jpg" alt="bebida 1">
                     <p class="nome">Coca cola</p>
                     <p class="descriçao">Coca cola 2 litros</p>
-                    <p class="preço">R$ 10,00</p>
+                    <p class="preço" data-identifier="food-price">R$ 10,00</p>
                     <div class="vector">
                         <img src="Vector.png" alt="vector de selecionado">
                     </div>
@@ -76,7 +76,7 @@
                     <img src="sprite_2l.jpg" alt="bebida 2">
                     <p class="nome">Sprite</p>
                     <p class="descriçao">Sprite 2 litros</p>
-                    <p class="preço">R$ 9,00</p>
+                    <p class="preço" data-identifier="food-price">R$ 9,00</p>
                     <div class="vector">
                         <img src="Vector.png" alt="vector de selecionado">
                     </div>
@@ -85,21 +85,21 @@
                     <img src="guarana2l.jpg" alt="bebida 3">
                     <p class="nome">Guaraná</p>
                     <p class="descriçao">Guaraná 2 litros</p>
-                    <p class="preço">R$ 9,50</p>
+                    <p class="preço" data-identifier="food-price">R$ 9,50</p>
                     <div class="vector">
                         <img src="Vector.png" alt="vector de selecionado">
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section data-identifier="desserts">
             <h3>Por fim, sua sobremesa</h3>
             <div class="opçoes sobremesas">
                 <div class="opçao opçao-sobremesa sobremesa1" onclick="selecionarSobremesa(this , 'sobremesa1')" data-identifier="food-option">
                     <img src="bombom_coco.jpg" alt="sobremesa 1">
                     <p class="nome">Bombom de coco</p>
                     <p class="descriçao">Delicioso bombom recheado com coco - 3 unidades</p>
-                    <p class="preço">R$ 12,00</p>
+                    <p class="preço" data-identifier="food-price">R$ 12,00</p>
                     <div class="vector">
                         <img src="Vector.png" alt="vector de selecionado">
                     </div>
@@ -108,7 +108,7 @@
                     <img src="bombom_morango.jpg" alt="sobremesa 2">
                     <p class="nome">Bombom de morango</p>
                     <p class="descriçao">Delicioso bombom recheado com morango - 3 unidades</p>
-                    <p class="preço">R$ 12,00</p>
+                    <p class="preço" data-identifier="food-price">R$ 12,00</p>
                     <div class="vector">
                         <img src="Vector.png" alt="vector de selecionado">
                     </div>
@@ -117,7 +117,7 @@
                     <img src="bombom_licor.jpg" alt="sobremesa 3">
                     <p class="nome">Bombom de licor</p>
                     <p class="descriçao">Delicioso bombom recheado com licor - 3 unidades</p>
-                    <p class="preço">R$ 13,00</p>
+                    <p class="preço" data-identifier="food-price">R$ 13,00</p>
                     <div class="vector">
                         <img src="Vector.png" alt="vector de selecionado">
                     </div>
@@ -126,20 +126,32 @@
                     <img src="bombom_ninho_nutella.jpg" alt="sobremesa 4">
                     <p class="nome">Ninho com nutella</p>
                     <p class="descriçao">Bombom de ninho recheado com nutella - 3 unidades</p>
-                    <p class="preço">R$ 15,00</p>
+                    <p class="preço" data-identifier="food-price">R$ 15,00</p>
                     <div class="vector">
                         <img src="Vector.png" alt="vector de selecionado">
                     </div>
                 </div>
             </div>
         </section>
+        <section class="fake"></section>
     </main>
-    <section class="fake"></section>
     <footer>
         <div class="pre-seleçao " onclick="fecharPedido()">
          Selecione os 3 itens para fechar o pedido
+         <a href="https://wa.me/5532998151234"></a>
         </div>
     </footer>
+     <!-- <div class="pedidoFechado">
+        <div class="tudo-certo-ai">
+            <h1>Confirme seu pedido</h1>
+            <p>prato</p>
+            <p>bebida</p>
+            <p>sobremesa</p>
+            <h2>total</h2>
+            <h3>Tudo certo</h3>
+            <h4>cancelar</h4>
+        </div>
+    </div>  -->
     <script src="script.js"></script>
 </body>
 
