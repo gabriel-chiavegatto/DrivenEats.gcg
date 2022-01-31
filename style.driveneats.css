@@ -126,16 +126,13 @@ footer{
     letter-spacing: 0.018em;
     color: #FFFFFF;
     z-index: 1;
-    
 }
-.pre-seleçao p{
+.pre-seleçao:not(:empty){
     padding: 8px 70px;
-    z-index: 1;
+    box-sizing: border-box;
 }
-.tudo-pronto{
-    display: none;
-}
-.borda-opçao-selecionada{
+
+.borda-opcao-selecionada{
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
 }
 .vector{
@@ -144,7 +141,7 @@ footer{
     bottom: 14px;
     right: 11px;
     position: absolute;
-    display: none;
+    /* display: none; */
 }
 .vector img{
     height: 15.44px;
