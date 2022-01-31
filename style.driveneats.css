@@ -35,7 +35,6 @@ section{
     position: relative;
     top: 92px;
     left: 0;
-    /* bottom: 92px; */
     overflow-x: scroll;
 }
 .opçoes{
@@ -61,7 +60,7 @@ h3{
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     position: relative;
 }
-.opçao img{
+.opçao > img{
     width: 144px;
     height: 87px;
     border-radius: 4px;
@@ -125,5 +124,37 @@ footer{
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.018em;
+    color: #FFFFFF;
+    z-index: 1;
+    
+}
+.pre-seleçao p{
+    padding: 8px 70px;
+    z-index: 1;
+}
+.tudo-pronto{
+    display: none;
+}
+.borda-opçao-selecionada{
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+}
+.vector{
+    height: 19px;
+    width: 19px;
+    bottom: 14px;
+    right: 11px;
+    position: absolute;
+    display: none;
+}
+.vector img{
+    height: 15.44px;
+    width: 15.44px;
+}
+.botao-fechar-pedido{
+    background: #32B72F;
+    width: 364px;
+    height: 61px;
+    z-index: 2;
+    border-radius: 50px;
     color: #FFFFFF;
 }
