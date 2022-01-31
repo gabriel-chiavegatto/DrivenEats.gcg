@@ -45,15 +45,20 @@ function deselecionarSobremesa(){
     
     }
 }
-
+let habilitado = false;
 //botao de fechar pedido
 function habilitarFecharPedido(){
     if(contagemOpcao == 3){
         const habil = document.querySelector(".pre-seleçao");
         habil.innerHTML = "Fechar Pedido";
         habil.classList.add("botao-fechar-pedido");
+        habilitado = true;
     }
 }
 function fecharPedido() {
-    
+    if(habilitado == true){
+        prompt("Por favor, informe seu nome");
+        prompt("Por favor, agora informe seu enderço");
+
+    }
 }
